@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+<body>
+<form action="">
+  <label for="carreras">carreras</label>
+  <select name="carreras" id="carreras">
+    <option value="">seleccione</option>
+  </select>
+  <button type="button" id="cargar-datos">cargar-datos</button>
+</form>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () =>{
+    //Referencias
+    const lista = document.getElementById('carreras')
+    const btncarga = document.getElementById('cargar-datos')
+
+    btncarga.addEventListener("click", () =>{
+      lista.innerHTML += "<option>Ing. Software</option>"
+      lista.innerHTML += "<option>Diseño Grafico</option>"
+      lista.innerHTML += "<option>Administracion Industrial</option>"
+    })
+  })
+</script>
+
+</body>
+</html>
